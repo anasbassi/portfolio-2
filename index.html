@@ -10,18 +10,18 @@
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">John Doe</div>
+      <div class="logo"><span class="blue">Adamu</span> <span class="red">Said</span> <span class="green">Murba</span></div>
       <div>
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about" class="blue">About</a></li>
+          <li><a href="#experience" class="red">Experience</a></li>
+          <li><a href="#projects" class="green">Gallery</a></li>
+          <li><a href="#contact" class="black">Contact</a></li>
         </ul>
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">John Doe</div>
+      <div class="logo"><span class="blue">Adamu</span> <span class="red">Said</span> <span class="green">Murba</span></div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -29,28 +29,28 @@
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li><a class="blue" href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()" class="red">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()" class="green">Gallery</a></li>
+          <li><a href="#contact" onclick="toggleMenu()" class="black">Contact</a></li>
         </div>
       </div>
     </nav>
-    <section id="profile">
+    <section id="profile" class="blue">
       <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+        <img src="./assets/murba-2.png" alt="John Doe profile picture" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">John Doe</h1>
-        <p class="section__text__p2">Frontend Developer</p>
+        <h1 class="title"><span class="blue">Adamu</span> <span class="red">Said</span> <span class="green">Murba</span></h1>
+        <p class="section__text__p2">Calligrapher</p>
         <div class="btn-container">
-          <button
+          <!-- <button
             class="btn btn-color-2"
             onclick="window.open('./assets/resume-example.pdf')"
           >
             Download CV
-          </button>
+          </button> -->
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
             Contact Info
           </button>
@@ -64,20 +64,20 @@
           />
           <img
             src="./assets/github.png"
-            alt="My Github profile"
+            alt="My Facebook profile"
             class="icon"
             onclick="location.href='https://github.com/'"
           />
         </div>
       </div>
     </section>
-    <section id="about">
+    <section id="about" class="blue">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
         <div class="section__pic-container">
           <img
-            src="./assets/about-pic.png"
+            src="./assets/murba-1.jpeg"
             alt="Profile picture"
             class="about-pic"
           />
@@ -91,7 +91,7 @@
                 class="icon"
               />
               <h3>Experience</h3>
-              <p>2+ years <br />Frontend Development</p>
+              <p>5+ years <br />Calligrapher</p>
             </div>
             <div class="details-container">
               <img
@@ -100,7 +100,7 @@
                 class="icon"
               />
               <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+              <p>B.Ed. Bachelors Degree <br>Chemistry Education</p>
             </div>
           </div>
           <div class="text-container">
@@ -122,7 +122,7 @@
         onclick="location.href='./#experience'"
       />
     </section>
-    <section id="experience">
+    <section id="experience" class="red">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
       <div class="experience-details-container">
@@ -256,9 +256,9 @@
         onclick="location.href='./#projects'"
       />
     </section>
-    <section id="projects">
+    <section id="projects" class="green">
       <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
+      <h1 class="title">Gallery</h1>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container color-container">
@@ -275,7 +275,7 @@
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://github.com/'"
               >
-                Github
+                Facebook
               </button>
               <button
                 class="btn btn-color-2 project-btn"
@@ -299,7 +299,7 @@
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://github.com/'"
               >
-                Github
+                Facebook
               </button>
               <button
                 class="btn btn-color-2 project-btn"
@@ -323,7 +323,7 @@
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://github.com/'"
               >
-                Github
+                Facebook
               </button>
               <button
                 class="btn btn-color-2 project-btn"
@@ -342,7 +342,7 @@
         onclick="location.href='./#contact'"
       />
     </section>
-    <section id="contact">
+    <section id="contact" class="black">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
